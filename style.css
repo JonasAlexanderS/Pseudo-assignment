@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-items {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.list-items:hover {
+  border: 1px solid red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.list-items:focus {
+  background-color: green;
+}
+
+.list-items:nth-child(odd) {
+  color: gray;
+}
+
+.list-items::before {
+  content: ">> ";
+}
+
+@media (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
