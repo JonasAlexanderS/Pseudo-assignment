@@ -13,28 +13,31 @@ li {
   flex-direction: row;
 }
 
-.list-items {
+ul > li {
   padding: 10px 20px;
   border: 1px solid black;
 }
 
-.list-items:hover {
+ul > li:hover {
   border: 1px solid red;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   cursor: pointer;
 }
 
-.list-items:focus {
+ul > li:focus {
   background-color: green;
 }
 
-.list-items:nth-child(odd) {
+ul > li:nth-child(odd) {
   color: gray;
 }
 
-.list-items::before {
+ul > li::before {
   content: ">> ";
+}
+
+ul > li:active {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 700px) {
